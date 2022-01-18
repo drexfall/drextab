@@ -2,9 +2,9 @@ const originalSettings = {
   appearance: {
     brightness: 75,
     theme: 1,
-    font: "Pacifico",
+    font: "Comfortaa",
     fontType:"cursive",
-    fontIndex: 8,
+    fontIndex: 0,
   },
   search: {
     newtab: true,
@@ -22,7 +22,7 @@ const originalSettings = {
     },
   },
   preferences: {
-    lowercase: false,
+    lowercase: true,
     animation: 0.3,
   },
 };

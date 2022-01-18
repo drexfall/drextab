@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-png" />
-    <title>home | deluxe</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Home | Drextab</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="components.css" />
     <link rel="stylesheet" href="home.css" />
@@ -14,17 +16,25 @@
   <body onload="initialSet(true);bodyLoad()">
     <div id="brightnessOverlay"></div>
     <div id="pageTitle" class="center-flex">
-      <img src="./assets/logo.png" alt="Deluxe Logo"/>
+      <img src="./assets/logo.png" alt="Drextab Logo" />
       <h1>DELUXE</h1>
     </div>
     <form class="landing-section center-flex" id="searchForm" method="get">
       <div class="search-container">
-        <input type="search" name="q" id="mainSearch" placeholder="Search Away..." />
+        <input
+          type="search"
+          name="q"
+          id="mainSearch"
+          placeholder="Search Away..."
+        />
       </div>
       <div class="search-button-container center-flex">
-        <select  id="defSearch" onchange="setSearch()">
-        </select>
-          <input type="submit" value="Search" class="d-btn search-btn btn-primary" />
+        <select id="defSearch" onchange="setSearch()"></select>
+        <input
+          type="submit"
+          value="Search"
+          class="d-btn search-btn btn-primary"
+        />
       </div>
     </form>
     <div class="footer">
@@ -37,5 +47,4 @@
       </ul>
     </div>
   </body>
-
 </html>
