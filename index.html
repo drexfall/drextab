@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-png" />
+    <title>home | deluxe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="components.css" />
+    <link rel="stylesheet" href="home.css" />
+    <script src="settings.js"></script>
+    <script src="main.js"></script>
+  </head>
+
+  <body onload="initialSet(true);bodyLoad()">
+    <div id="brightnessOverlay"></div>
+    <div id="pageTitle" class="center-flex">
+      <img src="./assets/logo.png" alt="Deluxe Logo"/>
+      <h1>DELUXE</h1>
+    </div>
+    <form class="landing-section center-flex" id="searchForm" method="get">
+      <div class="search-container">
+        <input type="search" name="q" id="mainSearch" placeholder="Search Away..." />
+      </div>
+      <div class="search-button-container center-flex">
+        <select  id="defSearch" onchange="setSearch()">
+        </select>
+          <input type="submit" value="Search" class="d-btn search-btn btn-primary" />
+      </div>
+    </form>
+    <div class="footer">
+      <ul class="main-navigator">
+        <li><a href="" class="active">Home</a></li>
+        <li><a href="./privacy/">Privacy</a></li>
+        <li><a href="./settings/">Settings</a></li>
+        <li><a href="./about/">About</a></li>
+        <li><a href="./feedback/">Feedback</a></li>
+      </ul>
+    </div>
+  </body>
+
+</html>

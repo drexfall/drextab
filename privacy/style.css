@@ -1,0 +1,17 @@
+
+.card-1 h1 {
+  text-align: center;
+  letter-spacing: 1pt;
+}
+.card-1 h2 {
+  letter-spacing: 1pt;
+  margin-top: 36pt;
+}
+.card-1 p {
+  opacity: 0.9;
+  text-align: justify;
+}
+
+#policyContentList ul {
+  list-style-type: disc;
+}

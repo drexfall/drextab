@@ -1,0 +1,101 @@
+/* Table Properties */
+table {
+  width: 100%;
+}
+
+th {
+  font-size: 14pt;
+}
+td{
+  padding: 14pt;
+}
+
+/* Label Properties */
+label {
+  font-size: 12pt;
+  opacity: 0.8;
+  cursor: pointer;
+}
+label:hover {
+  opacity: 1;
+}
+
+
+.label-wrapper {
+  vertical-align: middle;
+}
+/* Horizontal Rule */
+hr {
+  opacity: 0.5;
+  width: 70%;
+}
+
+/* Action Buttons */
+.action-buttons {
+  margin-top: 36pt;
+}
+
+/* Radio Button  */
+.d-radio {
+  padding: 14pt;
+}
+.d-radio span {
+  border-radius: 100%;
+}
+
+/* Search Engine Table */
+.engine-row .def-star{
+  font-size: 16px;
+  opacity: 0;
+}
+.engine-row.default .def-star{
+  opacity: 1;
+}
+.engine-row.deleted{
+  opacity: 0.5;
+}
+.engine-row.deleted .engine-name,
+.engine-row.deleted .engine-url{
+  text-decoration: line-through;
+}
+
+.engine-url{
+  width: 100%;
+}
+.engine-url:disabled{
+  background: transparent;
+}
+.def-engine-actions .d-btn{
+  height: 24pt;
+  width: 96pt;
+  font-size: 12px;
+  border-radius: 4pt;
+}
+.def-engine-actions .d-icon{
+  font-size: 16px;
+  width: 32px;
+}
+
+/* Theme selector properties */
+.theme-thumbnail {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  background-size: cover;
+}
+
+.theme-thumbnail#thumb1 {
+  background-image: url(../assets/backgrounds/1.png);
+}
+.theme-thumbnail#thumb2 {
+  background-image: url(../assets/backgrounds/2.png);
+}
+.theme-thumbnail#thumb3 {
+  background-image: url(../assets/backgrounds/3.png);
+}
+.theme-thumbnail#thumb4 {
+  background-image: url(../assets/backgrounds/4.png);
+}
+.theme-thumbnail#thumb5 {
+  background-image: url(../assets/backgrounds/5.png);
+}

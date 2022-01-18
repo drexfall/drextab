@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="shortcut icon" href="../assets/logo.png" type="image/x-png" />
+  <title>About Us | Deluxe Search</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../components.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <script src="main.js"></script>
+  <script src="../settings.js"></script>
+</head>
+
+<body onload="initialSet(false);bodyLoad()">
+  <div id="brightnessOverlay"></div>
+  <main class="content-wrapper">
+    <div id="pageTitle" class="center-flex">
+      <img src="../assets/logo.png" alt="Deluxe Logo" />
+      <h1>About Us</h1>
+    </div>
+    <section class="card-2">
+      <img src="../assets/about_thumbs/what.jpg" alt="Figurine standing in front of a question mark" />
+      <div class="about-text-container">
+        <h2>What is Deluxe?</h2>
+        <p>
+          Deluxe is a customised search platform that allows you to search
+          from a plethora of websites with included customisation and
+          anonymity. We basically take in your query and redirect you to your
+          desired engine so that it cannot track information like browser,
+          search source, etc.
+        </p>
+      </div>
+    </section>
+    <section class="card-2">
+      <div class="about-text-container">
+        <h2>Why Deluxe?</h2>
+        <p>
+          Unlike regular search engines, Deluxe doesn't actually search for
+          websites but rather redirects your queries to them. Which means you
+          can search faster and with all the beautiful themes that you want!
+          Deluxe also makes sure to neither collect nor let search engines
+          collect your private data while typing. This includes keylogging and
+          sensitive browser fingerprinting.
+        </p>
+      </div>
+      <img src="../assets/about_thumbs/why.jpg" alt="Pointer over text reading security" />
+    </section>
+    <section class="card-2">
+      <img src="../assets/about_thumbs/mission.jpg" alt="Paintbrush dipped in blue paint" />
+      <div class="about-text-container">
+        <h2>Our Mission</h2>
+        <p>
+          Our goal is to provide users with an aesthetic environment to solve
+          your queries. You should not open your browser to see a dull and
+          ugly welcome page. Instead you can use our completely free service
+          and show it off to your friends!
+        </p>
+      </div>
+    </section>
+    <section class="card-2">
+      <div class="about-text-container">
+        <h2>Our Logo</h2>
+        <p>
+          Our logo, "The Pinnaccle Sphere" is an abstract design which
+          perfectly encompasses our main principle - anonymity. The spherical
+          shape represents our vision of being used all aroud the globe.
+        </p>
+      </div>
+      <img src="../assets/about_thumbs/logo.png" alt="Deluxe Logo" />
+    </section>
+    <section class="card-2">
+      <img src="../assets/about_thumbs/team.jpg" alt="Image of our team" />
+      <div class="about-text-container">
+        <h2>Our team</h2>
+        <p>
+          We are a small group of 8 members and work on different parts of this project. From marketing to programming,
+          we want every individual on this planet to feel as empowered as we do each day.
+        </p>
+      </div>
+    </section>
+    <section class="card-2 faq-container">
+      <h2>Frequenty Asked Questions</h2>
+
+      <section class="card-3 faq-elem">
+        <div class="header">
+          <div class="d-check">
+            <input type="checkbox" name="faq-select" id="faqCheck1" onchange="toggleFAQ()" />
+            <span class="material-icons">expand_more</span>
+          </div>
+          <label for="faqCheck1">Is my data collected?</label>
+        </div>
+        <div class="content">
+          <p>
+            Deluxe strives to protect your data and hence we
+            <b>do not</b> collect any user data. You can read more in our
+            <a href="../privacy/">Privacy Policy</a>.
+          </p>
+        </div>
+      </section>
+      <section class="card-3 faq-elem">
+        <div class="header">
+          <div class="d-check">
+            <input type="checkbox" name="faq-select" id="faqCheck3" onchange="toggleFAQ()" />
+            <span class="material-icons">expand_more</span>
+          </div>
+          <label for="faqCheck3">How do you keep settings without collecting data?</label>
+        </div>
+        <div class="content">
+          <p>
+            We highly value your privacy and hence <i><b>do not</b></i> collect any
+            data. We use the <a
+              href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">localStorage</a> protocol to
+            store and use your settings throughout
+            all the Deluxe pages. We don't even use that until you
+            specifically press the <i><b>Save</b></i> button on the <a href="../settings/">Settings page</a> menu.</a>
+          </p>
+        </div>
+      </section>
+      <section class="card-3 faq-elem">
+        <div class="header">
+          <div class="d-check">
+            <input type="checkbox" name="faq-select" id="faqCheck2" onchange="toggleFAQ()" />
+            <span class="material-icons">expand_more</span>
+          </div>
+          <label for="faqCheck2">How to change theme?</label>
+        </div>
+        <div class="content">
+          <p>
+            Go to the <a href="../feedback/">Feedback page</a> and fill out
+            your details. In the <b>Tags</b> field, select <b>Bug</b>
+            <i>(add more tags to filter your problem better)</i> and then give
+            the severity of your bug in the <b>Rating panel</b>. That's it!
+          </p>
+        </div>
+      </section>
+      <section class="card-3 faq-elem">
+        <div class="header">
+          <div class="d-check">
+            <input type="checkbox" name="faq-select" id="faqCheck4" onchange="toggleFAQ()" />
+            <span class="material-icons">expand_more</span>
+          </div>
+          <label for="faqCheck4">How to report a bug?</label>
+        </div>
+        <div class="content">
+          <p>
+            Go to the <a href="../feedback/">Feedback page</a> and fill out
+            your details. In the <b>Tags</b> field, select <b>Bug</b>
+            <i>(add more tags to filter your problem better)</i> and then give
+            the severity of your bug in the <b>Rating panel</b>. That's it!
+          </p>
+        </div>
+      </section>
+    </section>
+
+    <div class="footer center-flex">
+      <span>© Deluxe 2021</span>
+      <span class="separator">|</span>
+      <ul class="main-navigator">
+        <li><a href="../">Home</a></li>
+        <li><a href="../privacy/">Privacy</a></li>
+        <li><a href="../settings/">Settings</a></li>
+        <li><a href="" class="active">About</a></li>
+        <li><a href="../feedback/">Feedback</a></li>
+      </ul>
+    </div>
+  </main>
+</body>
+
+</html>

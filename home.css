@@ -1,0 +1,75 @@
+#pageTitle {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 24pt;
+}
+#pageTitle img {
+  width: 48pt;
+}
+#pageTitle h1 {
+  font-size: 48pt;
+}
+/* ------------------------------------- */
+.landing-section {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  flex-direction: column;
+}
+
+.search-container {
+  height: 80%;
+  width: 100%;
+  position: relative;
+}
+.search-button-container {
+  position: absolute;
+  bottom: 35%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  gap: 36pt;
+}
+.search-btn{
+    height: 36pt;
+    width: 96pt;
+}
+#mainSearch {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #dedede22;
+  border: 2pt solid #dedede;
+  border-radius: 10pt;
+  padding: 12pt;
+  width: 70%;
+  font-size: 18pt;
+  max-width: 720pt;
+  text-align: center;
+  color: var(--prim-100);
+  letter-spacing: 0.5pt;
+}
+#mainSearch:hover {
+    background-color: transparent;
+  outline: 0;
+  border-color: var(--prim-100);
+  box-shadow: 0 0 2pt var(--prim-100);
+  width: 80%;
+}
+#mainSearch:focus {
+    background-color: transparent;
+  outline: 0;
+  border-color: var(--prim-100);
+  box-shadow: 0 0 10pt var(--prim-100);
+  width: 80%;
+}
+/* ------------------------------------- */
+
+.footer {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}

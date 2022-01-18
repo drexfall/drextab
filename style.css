@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700&display=swap');
+
+
+
+:root{
+  --prim-20: #ffffff33;
+  --prim-40: #ffffff66;
+  --prim-60: #ffffff99;
+  --prim-80: #ffffffcc;
+  --prim-100: #ffffffff;
+  --scnd-100: #150e31;
+}
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-image: url(./assets/backgrounds/1.png);
+  background-attachment: fixed;
+  transition-duration: 0.3s;
+}
+body * {
+  transition-duration: inherit;
+  color: var(--prim-100);
+  font-family: inherit;
+  text-transform: inherit;
+}
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p{
+  line-height: 1.5em;
+}
