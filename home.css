@@ -18,7 +18,15 @@
   position: absolute;
   flex-direction: column;
 }
-
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+.search-wrapper label{
+  font-size: 0.8em;
+  opacity: 0.7;
+}
 .search-container {
   height: 80%;
   width: 100%;
@@ -30,6 +38,8 @@
   left: 50%;
   transform: translate(-50%, 50%);
   gap: 36pt;
+  align-items: end;
+  display: flex;
 }
 .search-btn{
     height: 36pt;

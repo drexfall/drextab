@@ -13,7 +13,7 @@
     <script src="./main.js"></script>
   </head>
 
-  <body onload="initialSet(true);bodyLoad()">
+  <body>
     <div id="brightnessOverlay"></div>
     <div id="pageTitle" class="center-flex">
       <img src="./assets/logo.png" alt="Drextab Logo" />
@@ -26,17 +26,19 @@
           name="q"
           id="mainSearch"
           placeholder="Search Away..."
-          onkeyup="onType()"
+          oninput="onType()"
         />
       </div>
       <div class="search-button-container center-flex">
-        <select id="defSearch" onchange="setSearch()"></select>
-        <input
+        <div class="search-wrapper">
+          <label for="defSearch">Search with</label>
+          <select id="defSearch" onchange="setSearch()"></select>
+        </div>
+        <button
           type="submit"
-          value="Search"
           class="d-btn search-btn btn-primary"
           id="btnSearch"
-        />
+        >Search</button>
       </div>
     </form>
     <div class="footer">
