@@ -44,7 +44,7 @@ function refreshEngines() {
       continue;
     }
     let element = `
-    <tr class="engine-row ${settings.search.default == e ? "default" : ""}">
+    <tr class="engine-row ${settings.search.default === e ? "default" : ""}">
     <td align="center">
       <div class="d-check">
         <input type="checkbox" name="engine-select" id="${e.toLowerCase()}-search" onchange="setEngine(this)"/>
@@ -100,8 +100,7 @@ function themeSet() {
 }
 function setBrightness() {
   let slider = document.getElementById("brightnessSlider");
-  let brightness = 1 - slider.value / 100;
-  document.getElementById("brightnessOverlay").style.opacity = brightness;
+  document.getElementById("brightnessOverlay").style.opacity = 1 - slider.value / 100;
   document.getElementById("brightnessCount").innerHTML = slider.value + "%";
 }
 function setAnimDuration() {
@@ -114,9 +113,7 @@ function setFont() {
 
   let fontName = dropBtn.selectedOptions[0].innerHTML;
   let fontType = dropBtn.value;
-  fontFamily = fontName + "," + fontType;
-
-  document.body.style.fontFamily = fontFamily;
+  document.body.style.fontFamily = fontName + "," + fontType;
 }
 function setEngine(engine) {
   let enabledCount = 0,
@@ -126,7 +123,7 @@ function setEngine(engine) {
     if (engines[e].classList.contains("default") && checkbox.checked) {
       defChecked = true;
     }
-    if (engine == "all") {
+    if (engine === "all") {
       checkbox.checked = checkAll.checked;
     } else if (!engine.checked) {
       engines[e].getElementsByClassName("engine-url")[0].disabled = true;
@@ -137,7 +134,7 @@ function setEngine(engine) {
   }
   if (enabledCount > 0) {
     remBtn.disabled = false;
-    if (enabledCount == 1) {
+    if (enabledCount === 1) {
       editBtn.disabled = false;
       defBtn.disabled = false;
       remBtn.innerHTML = "delete";
@@ -147,7 +144,7 @@ function setEngine(engine) {
       remBtn.innerHTML = "delete_sweep";
     }
   } else {
-    if (enabledCount == 0) {
+    if (enabledCount === 0) {
       checkAll.checked = false;
     }
     defBtn.disabled = true;

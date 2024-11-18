@@ -37,7 +37,7 @@ function onType() {
     } else {
       form.action = "https://" + searchbar.value;
     }
-    searchButton.value = "Launch Website!"
+    searchButton.value = "Launch"
   } else {
     setSearch();
     searchButton.value = "Search"
