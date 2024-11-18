@@ -160,19 +160,19 @@ function setEngine(engine) {
 }
 function addEngine() {
   let url = prompt(
-      "Search for Lorem Ipsum on your favourite search engine and paste the URL here: "
+      "Search for drexfall on your favourite search engine and paste the URL here: "
     ).toLowerCase(),
     name = prompt("Enter name of the engine here: "),
     query;
   if (url) {
-    query = url.match(/[?][a-z]*=lorem[+]ipsum/i)[0];
+    query = url.match(/[?][a-z]*=drexfall/i)[0];
     if (query) {
       url = url.match(/^https:\/\/[a-z]*[.]\D+[.][a-z]*(\/[a-z]*)*/i)[0];
       query = query.replace("?", "");
-      query = query.replace("=lorem+ipsum", "");
+      query = query.replace("=drexfall", "");
     }
   } else {
-    alert("Please enter a proper URL\nhttps://www.example.com/?q=lorem+ipsum");
+    alert("Please enter a proper URL\nhttps://www.example.com/?q=drexfall");
   }
   settings.search.engines[name] = { url, query };
   refreshEngines();

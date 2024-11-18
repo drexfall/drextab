@@ -125,11 +125,9 @@
 .d-check input ~ span {
   position: absolute;
   height: 100%;
-  width: 100%;
   border-radius: 2pt;
   text-align: center;
   font-weight: bold;
-  position: absolute;
   top: 0;
   left: 0;
   color: transparent;
@@ -329,7 +327,7 @@ select:hover {
   border-radius: 8pt;
 }
 .card-3 label {
-  padding: 24pt;
+  padding-top: 2em;
   box-sizing: border-box;
   width: 100%;
   cursor: pointer;
