@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/96ded03c50543ba68a0c.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/6e802d2dc56fa93a5454.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/9bdd8ffa511bf0f53459.png">
+<link rel="manifest" href="../assets/1c337fa2fa1515591f8d.webmanifest">
+    <title>Feedback // drextab</title>
+
+  <script defer src="../feedback/main.js"></script><link href="../feedback/style.css" rel="stylesheet"></head>
+  <body>
+    <div id="brightnessOverlay"></div>
+    <div class="content-wrapper">
+      <div id="pageTitle" class="center-flex">
+        <img src="../assets/9d4861e3b6a8e8e51b06.png" alt="Drextab Logo"/>
+        <h1>Feedback</h1>
+      </div>
+      <div class="card-1">
+        <form onsubmit="validateForm()" id="feedbackForm">
+          <table cellpadding="14pt">
+            <tr>
+              <td class="label-wrapper">
+                <label for="feedbackName">Name</label>
+              </td>
+              <td align="right">
+                <input
+                  type="text"
+                  name="feedback_name"
+                  id="feedbackName"
+                  placeholder="Jane Doe"
+                  style="text-align: right"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="label-wrapper">
+                <label for="feedbackEmail">Email</label>
+              </td>
+              <td align="right">
+                <input
+                  type="email"
+                  name="feedback_email"
+                  id="feedbackEmail"
+                  placeholder="janedoe007@email.com"
+                  style="text-align: right"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="label-wrapper">
+                <label for="fdbkMobile">Mobile No.</label>
+              </td>
+              <td align="right">
+                <input
+                  type="tel"
+                  name="mobile_number"
+                  id="fdbkMobile"
+                  placeholder="+91 9XXXX 8XXXX"
+                  style="text-align: right"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="label-wrapper">
+                <label for="feedbackSubject">Subject</label>
+              </td>
+              <td align="right">
+                <input
+                  type="text"
+                  name="feedback_subject"
+                  id="feedbackSubject"
+                  placeholder="Amazing UI!"
+                  style="text-align: right"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="label-wrapper">
+                <label for="relatedSelect">Related to page</label>
+              </td>
+              <td align="right">
+                <select name="related-to" id="relatedSelect">
+                  <optgroup>
+                    <option value="home">Home</option>
+                    <option value="privacy">Privacy</option>
+                    <option value="settings">Settings</option>
+                    <option value="about">About</option>
+                    <option value="feedback">Feedback</option>
+                  </optgroup>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="label-wrapper">
+                <label for="tags">Tags</label>
+              </td>
+              <td align="right">
+                <div id="categoryContainer">
+                  <label class="d-tag" for="cat1">
+                    <input type="checkbox" name="tagCheck" id="cat1" />
+                    <span class="btn-secondary">Bug</span>
+                  </label>
+                  <label class="d-tag" for="cat2">
+                    <input
+                      type="checkbox"
+                      name="tagCheck"
+                      id="cat2"
+                      checked="true"
+                    />
+                    <span class="btn-secondary">Security</span>
+                  </label>
+                  <label class="d-tag" for="cat3">
+                    <input type="checkbox" name="tagCheck" id="cat3" />
+                    <span class="btn-secondary">UI</span>
+                  </label>
+                  <label class="d-tag" for="addTagBtn" id="addTagLabel" >
+                    <input type="button" name="tagCheck" id="addTagBtn"  onclick="addTag()"/>
+                    <span class="btn-tertiary">+</span>
+                  </label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="label-wrapper">
+                <label for="rating">Rating</label>
+              </td>
+              <td align="right">
+                <div id="ratingBar">
+                  <label class="d-radio" for="rating1">
+                    <input type="radio" name="ratingRadio" id="rating1" />
+                    <span>1</span>
+                  </label>
+                  <label class="d-radio" for="rating2">
+                    <input type="radio" name="ratingRadio" id="rating2" />
+                    <span>2</span>
+                  </label>
+                  <label class="d-radio" for="rating3">
+                    <input type="radio" name="ratingRadio" id="rating3" />
+                    <span>3</span>
+                  </label>
+                  <label class="d-radio" for="rating4">
+                    <input type="radio" name="ratingRadio" id="rating4" />
+                    <span>4</span>
+                  </label>
+                  <label class="d-radio" for="rating5">
+                    <input
+                      type="radio"
+                      name="ratingRadio"
+                      id="rating5"
+                      checked="true"
+                    />
+                    <span>5</span>
+                  </label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="label-wrapper message">
+                <label for="contactMessage">Message</label>
+              </td>
+              <td align="right">
+                <textarea
+                  rows="5"
+                  name="contact_message"
+                  id="contactMessage"
+                  placeholder="Type your message..."
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" align="center">
+                <input type="submit" value="Submit" class="d-btn btn-primary" />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      <div class="footer center-flex">
+        <span>&copy; Drextab 2024</span>
+        <span class="separator">|</span>
+        <ul class="main-navigator">
+          <li><a href="../">Home</a></li>
+          <li><a href="../privacy/">Privacy</a></li>
+          <li><a href="../settings">Settings</a></li>
+          <li><a href="../about">About</a></li>
+          <li><a href="" class="active">Feedback</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

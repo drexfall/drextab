@@ -1,0 +1,425 @@
+/*!**********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/style.scss ***!
+  \**********************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+/*!**************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/style.scss (1) ***!
+  \**************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nova+Mono&family=Open+Sans:wght@300;400;500;600;700;800&family=Patrick+Hand:wght@400&family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Prata:wght@400&family=Quicksand:wght@200;300;400;500;600;700&family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@200;300;400;500;600;700&family=Roboto+Mono:wght@200;300;400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&display=swap);
+/*!**************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/style.scss (2) ***!
+  \**************************************************************************************************************************************************************/
+#brightnessOverlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  opacity: 0;
+}
+
+.d-btn {
+  height: 48pt;
+  width: 128pt;
+  border-radius: 8pt;
+  font-size: 12pt;
+  letter-spacing: 1pt;
+  padding: 0;
+  cursor: pointer;
+}
+.d-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.d-btn:active {
+  transform: scale(0.9);
+}
+
+.d-icon {
+  background-color: transparent;
+  border: 0;
+  height: 24pt;
+  width: 24pt;
+  padding: 0;
+}
+.d-icon img {
+  height: 100%;
+  width: 100%;
+}
+
+/* Primary button style */
+.btn-primary {
+  background: var(--prim-80);
+  color: var(--scnd-100);
+  border: none;
+}
+.btn-primary:not(:disabled):hover {
+  color: var(--prim-100);
+  background: var(--scnd-100);
+}
+
+/* Secondary button style */
+.btn-secondary {
+  background: var(--prim-20);
+  border: 2pt solid transparent;
+}
+.btn-secondary:not(:disabled):hover {
+  background: var(--prim-100);
+  border-color: var(--prim-100);
+  color: var(--scnd-100);
+}
+
+/* Tertiary button style */
+.btn-tertiary {
+  background: transparent;
+  border: 2pt solid var(--prim-100);
+}
+.btn-tertiary:not(:disabled):hover {
+  color: var(--scnd-100);
+  background: var(--prim-60);
+  border-color: var(--prim-100);
+}
+
+.d-tag {
+  position: relative;
+  height: 8pt;
+  width: 48pt;
+  display: inline-block;
+  margin: 0 4pt;
+  cursor: pointer;
+}
+.d-tag input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+.d-tag span {
+  height: 100%;
+  width: 100%;
+  display: table;
+  position: absolute;
+  text-align: center;
+  border-radius: 16pt;
+  font-size: 10pt;
+}
+.d-tag:hover span {
+  background-color: var(--prim-40);
+  border-color: var(--prim-100);
+}
+.d-tag input:checked ~ span {
+  color: var(--scnd-100);
+  background-color: var(--prim-100);
+}
+
+.d-check {
+  --size: 16px;
+  height: var(--size);
+  width: var(--size);
+  position: relative;
+}
+.d-check input {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+.d-check input ~ span {
+  position: absolute;
+  height: 100%;
+  border-radius: 2pt;
+  text-align: center;
+  font-weight: bold;
+  top: 0;
+  left: 0;
+  color: transparent;
+  outline: 2pt solid var(--prim-80);
+  font-size: var(--size);
+}
+.d-check input:hover ~ span {
+  outline-color: var(--prim-100);
+  color: var(--prim-100);
+}
+.d-check input:checked ~ span {
+  background-color: var(--prim-100);
+  outline-color: var(--prim-100);
+  color: var(--scnd-100);
+}
+
+.d-toggle {
+  height: 16pt;
+  width: 32pt;
+  position: relative;
+}
+.d-toggle:hover .toggle-body {
+  outline-color: var(--prim-100);
+}
+.d-toggle:hover .toggle-body div {
+  background: var(--prim-60);
+}
+.d-toggle input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  opacity: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+.d-toggle input + .toggle-body div {
+  background: var(--prim-20);
+  left: 0;
+  transform: translate(0%, 0%);
+}
+.d-toggle input:checked + .toggle-body div {
+  background: var(--prim-100);
+  left: 100%;
+  transform: translate(-100%, 0%);
+}
+.d-toggle .toggle-body {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--prim-20);
+  border-radius: 12pt;
+  outline: 1pt solid transparent;
+  border: 2pt solid transparent;
+}
+.d-toggle .toggle-body div {
+  width: 50%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  border-radius: 100%;
+}
+
+.d-radio {
+  position: relative;
+  padding: 24pt;
+  cursor: pointer;
+  display: inline-block;
+}
+.d-radio input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+.d-radio span {
+  background-color: var(--prim-20);
+  width: 100%;
+  height: 100%;
+  display: table;
+  position: absolute;
+  text-align: center;
+  border-radius: 4pt;
+  border: 1pt solid transparent;
+  top: 0;
+  left: 0;
+}
+.d-radio:hover span {
+  background-color: var(--prim-20);
+  border-color: var(--prim-100);
+}
+.d-radio input:checked ~ span {
+  color: var(--scnd-100);
+  background-color: var(--prim-100);
+}
+
+select {
+  background: var(--prim-40);
+  padding: 8pt;
+  border-radius: 4pt;
+  border: 0;
+  font-size: 12pt;
+  cursor: pointer;
+  outline: 1pt solid transparent;
+}
+select:hover {
+  outline-color: var(--prim-100);
+}
+
+.footer {
+  margin: 5% 0;
+}
+.footer span {
+  font-size: 12pt;
+  color: var(--prim-100);
+  opacity: 0.7;
+  font-weight: bold;
+}
+.footer .separator {
+  margin: 0 24pt;
+}
+
+.main-navigator {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  -moz-column-gap: 24pt;
+       column-gap: 24pt;
+  padding: 0;
+}
+.main-navigator li {
+  list-style: none;
+  cursor: pointer;
+}
+.main-navigator a {
+  color: var(--prim-100);
+  font-size: 12pt;
+  text-decoration: none;
+  border-bottom: 2pt solid transparent;
+  opacity: 0.7;
+}
+.main-navigator a.active, .main-navigator a:hover {
+  color: var(--prim-100);
+  border-bottom-color: var(--prim-100);
+  opacity: 1;
+}
+
+.content-wrapper {
+  min-height: 100%;
+  height: 100%;
+  width: 80%;
+  max-width: 720pt;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  background-color: rgba(218, 218, 218, 0.1333333333);
+  border-radius: 14pt;
+  width: 100%;
+}
+
+.card-1 {
+  min-height: 80%;
+  padding: 36pt;
+  box-sizing: border-box;
+}
+
+.card-2 {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 24pt;
+       column-gap: 24pt;
+  margin-top: 48pt;
+  padding: 24pt;
+  box-sizing: border-box;
+}
+
+.card-3 {
+  margin-top: 12pt;
+  border-radius: 8pt;
+}
+.card-3 label {
+  padding-top: 2em;
+  box-sizing: border-box;
+  width: 100%;
+  cursor: pointer;
+}
+
+#pageTitle {
+  color: var(--prim-100);
+  gap: 24pt;
+  margin: 128pt 0;
+}
+#pageTitle img {
+  width: 36pt;
+}
+#pageTitle h1 {
+  color: var(--prim-100);
+  font-size: 36pt;
+  letter-spacing: 5pt;
+}
+
+input,
+textarea {
+  background: var(--prim-20);
+  border-radius: 4pt;
+  border: 1pt solid transparent;
+  padding: 12pt;
+  font-size: 12pt;
+  max-height: 100%;
+  resize: vertical;
+  overflow: hidden;
+  outline: 1pt solid transparent;
+}
+input:not(:disabled):hover,
+textarea:not(:disabled):hover {
+  border-color: var(--prim-100);
+}
+input:focus-visible,
+textarea:focus-visible {
+  border-color: var(--prim-100);
+  background-color: transparent;
+}
+
+:root {
+  --prim-20: #ffffff33;
+  --prim-40: #ffffff66;
+  --prim-60: #ffffff99;
+  --prim-80: #ffffffcc;
+  --prim-100: #ffffffff;
+  --scnd-100: #150e31;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-attachment: fixed;
+  transition-duration: 0.3s;
+  background-size: cover;
+}
+
+body * {
+  transition-duration: inherit;
+  color: var(--prim-100);
+  font-family: inherit;
+  text-transform: inherit;
+}
+
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  line-height: 1.5em;
+}
+/*!***********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/privacy/style.scss ***!
+  \***********************************************************************************************************************************************************/
+.card-1 p {
+  opacity: 0.9;
+  text-align: justify;
+}
+.card-1 p h1 {
+  text-align: center;
+  letter-spacing: 1pt;
+}
+.card-1 p h2 {
+  letter-spacing: 1pt;
+  margin-top: 36pt;
+}
+
+#policyContentList ul {
+  list-style-type: disc;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHJpdmFjeS9zdHlsZS5jc3MiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7QUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7QUNHRjs7QURBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0FDR0Y7QURERTtFQUNFO0VBQ0E7QUNHSjtBREFFO0VBQ0U7QUNFSjs7QURFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7QUNDRjtBRENFO0VBQ0U7RUFDQTtBQ0NKOztBREdBO0FBQ0E7RUFDRTtFQUNBO0VBQ0E7QUNBRjtBREVFO0VBQ0U7RUFDQTtBQ0FKOztBRElBO0FBQ0E7RUFDRTtFQUNBO0FDREY7QURHRTtFQUNFO0VBQ0E7RUFDQTtBQ0RKOztBREtBO0FBQ0E7RUFDRTtFQUNBO0FDRkY7QURJRTtFQUNFO0VBQ0E7RUFDQTtBQ0ZKOztBRE1BO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0FDSEY7QURLRTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0FDSEo7QURNRTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0FDSko7QURPRTtFQUNFO0VBQ0E7QUNMSjtBRFFFO0VBQ0U7RUFDQTtBQ05KOztBRFVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7QUNQRjtBRFNFO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0FDUEo7QURVRTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0FDUko7QURXRTtFQUNFO0VBQ0E7QUNUSjtBRFlFO0VBQ0U7RUFDQTtFQUNBO0FDVko7O0FEY0E7RUFDRTtFQUNBO0VBQ0E7QUNYRjtBRGVJO0VBQ0U7QUNiTjtBRGNNO0VBQ0U7QUNaUjtBRGlCRTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtBQ2ZKO0FEa0JNO0VBQ0U7RUFDQTtFQUNBO0FDaEJSO0FEcUJNO0VBQ0U7RUFDQTtFQUNBO0FDbkJSO0FENEJFO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0FDMUJKO0FENkJJO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtBQzNCTjs7QURrQ0E7RUFDRTtFQUNBO0VBQ0E7RUFDQTtBQy9CRjtBRGlDRTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0FDL0JKO0FEa0NFO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7QUNoQ0o7QURtQ0U7RUFDRTtFQUNBO0FDakNKO0FEb0NFO0VBQ0U7RUFDQTtBQ2xDSjs7QURzQ0E7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtBQ25DRjtBRHFDRTtFQUNFO0FDbkNKOztBRHVDQTtFQUNFO0FDcENGO0FEc0NFO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7QUNwQ0o7QUR1Q0U7RUFDRTtBQ3JDSjs7QUR5Q0E7RUFDRTtFQUNBO0VBQ0E7RUFDQTtPQUFBO0VBQ0E7QUN0Q0Y7QUR3Q0U7RUFDRTtFQUNBO0FDdENKO0FEeUNFO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtBQ3ZDSjtBRHlDSTtFQUVFO0VBQ0E7RUFDQTtBQ3hDTjs7QUQ2Q0E7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7QUMxQ0Y7O0FENkNBOzs7RUFHRTtFQUNBO0VBQ0E7QUMxQ0Y7O0FENkNBO0VBQ0U7RUFDQTtFQUNBO0FDMUNGOztBRDZDQTtFQUNFO0VBQ0E7RUFDQTtPQUFBO0VBQ0E7RUFDQTtFQUNBO0FDMUNGOztBRDZDQTtFQUNFO0VBQ0E7QUMxQ0Y7QUQ0Q0U7RUFDRTtFQUNBO0VBQ0E7RUFDQTtBQzFDSjs7QUQ4Q0E7RUFDRTtFQUNBO0VBQ0E7QUMzQ0Y7QUQ2Q0U7RUFDRTtBQzNDSjtBRDhDRTtFQUNFO0VBQ0E7RUFDQTtBQzVDSjs7QURnREE7O0VBRUU7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0FDN0NGO0FEK0NFOztFQUNFO0FDNUNKO0FEK0NFOztFQUNFO0VBQ0E7QUM1Q0o7O0FBbFdBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0FBcVdGOztBQW5XQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtBQXNXRjs7QUFwV0E7RUFDRTtFQUNBO0VBQ0E7RUFDQTtBQXVXRjs7QUFyV0E7RUFDRTtFQUNBO0VBQ0E7QUF3V0Y7O0FBdFdBO0VBQ0U7QUF5V0YsQzs7OztBQ3hZQTtFQUNFO0VBQ0E7QUFDRjtBQUFDO0VBRUc7RUFDQTtBQUNKO0FBQ0U7RUFDRTtFQUNBO0FBQ0o7O0FBR0E7RUFDRTtBQUFGLEMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9kcmV4dGFiLy4vc3JjL3N0eWxlcy9jb21wb25lbnRzLnNjc3MiLCJ3ZWJwYWNrOi8vZHJleHRhYi8uL3NyYy9zdHlsZXMvc3R5bGUuc2NzcyIsIndlYnBhY2s6Ly9kcmV4dGFiLy4vc3JjL3ByaXZhY3kvc3R5bGUuc2NzcyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==*/
