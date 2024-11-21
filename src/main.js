@@ -1,7 +1,7 @@
 import "./styles/style.scss"
 import "./styles/home.scss"
 import {initialSet, settings} from "./scripts/main";
-let searchbar, form, selector, searchSelector, searchButton;
+let searchbar, form, searchSelector, searchButton;
 
 function setSearch() {
 	const engine = settings.search.engines[searchSelector.value];

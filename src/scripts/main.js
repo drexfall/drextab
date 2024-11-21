@@ -52,7 +52,6 @@ function initialSet(home) {
   document.body.style.transitionDuration = settings.preferences.animation
   document.body.style.fontFamily = settings.appearance.font + "," + settings.appearance.fontType
   document.body.style.backgroundImage = `linear-gradient(-45deg,${themes[settings.appearance.theme - 1][0]},${themes[settings.appearance.theme - 1][1]})`
-  console.log()
   document.getElementById("brightnessOverlay").style.opacity = 1 - settings.appearance.brightness / 100
   
 }
