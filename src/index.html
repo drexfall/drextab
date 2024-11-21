@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon-16x16.png" />
+    <link rel="manifest" href="../site.webmanifest" />
+    <title>Search // drextab</title>
+  </head>
+
+  <body>
+    <div id="brightnessOverlay"></div>
+    <div id="pageTitle" class="center-flex">
+      <img src="../static/logo.png" alt="Drextab Logo" />
+      <h1>DREXTAB</h1>
+    </div>
+    <form class="landing-section center-flex" id="searchForm" method="get">
+      <div class="search-container">
+        <input
+          type="search"
+          name="q"
+          id="mainSearch"
+          placeholder="Search Away..."
+        />
+      </div>
+      <div class="search-button-container center-flex">
+        <div class="search-wrapper">
+          <label for="defSearch">Search with</label>
+          <select id="defSearch"></select>
+        </div>
+        <button
+          type="submit"
+          class="d-btn search-btn btn-primary"
+          id="btnSearch"
+        >Search</button>
+      </div>
+    </form>
+    <div class="footer">
+      <ul class="main-navigator">
+        <li><a href="" class="active">Home</a></li>
+        <li><a href="../privacy">Privacy</a></li>
+        <li><a href="settings">Settings</a></li>
+        <li><a href="../about">About</a></li>
+        <li><a href="feedback">Feedback</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
+

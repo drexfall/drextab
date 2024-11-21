@@ -1,0 +1,38 @@
+{
+  "name": "drextab",
+  "version": "2.0.0",
+  "description": "A new-tab page to increase your search productivity",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "run": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drexfall/drextab.git"
+  },
+  "author": "drexfall",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drexfall/drextab/issues"
+  },
+  "homepage": "https://github.com/drexfall/drextab#readme",
+  "devDependencies": {
+    "@webpack-cli/generators": "^3.0.7",
+    "autoprefixer": "^10.4.20",
+    "css-loader": "^7.1.2",
+    "file-loader": "^6.2.0",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.3",
+    "mini-css-extract-plugin": "^2.9.2",
+    "postcss": "^8.4.49",
+    "postcss-loader": "^8.1.1",
+    "sass": "^1.81.0",
+    "sass-loader": "^16.0.3",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  }
+}

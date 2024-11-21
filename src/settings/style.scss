@@ -1,0 +1,127 @@
+/* Table Properties */
+table {
+  width: 100%;
+
+  th {
+    font-size: 14pt;
+  }
+
+  td {
+    padding: 14pt;
+  }
+}
+
+/* Label Properties */
+label {
+  font-size: 12pt;
+  opacity: 0.8;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.label-wrapper {
+  vertical-align: middle;
+}
+
+/* Horizontal Rule */
+hr {
+  opacity: 0.5;
+  width: 70%;
+}
+
+/* Action Buttons */
+.action-buttons {
+  margin-top: 36pt;
+}
+
+/* Radio Button */
+.d-radio {
+  padding: 14pt;
+
+  span {
+    border-radius: 100%;
+  }
+}
+
+/* Search Engine Table */
+.engine-row {
+  .def-star {
+    font-size: 16px;
+    opacity: 0;
+  }
+
+  &.default .def-star {
+    opacity: 1;
+  }
+
+  &.deleted {
+    opacity: 0.5;
+
+    .engine-name,
+    .engine-url {
+      text-decoration: line-through;
+    }
+  }
+
+  .engine-url {
+    width: 100%;
+    box-sizing: border-box;
+
+    &:disabled {
+      background: transparent;
+    }
+  }
+}
+
+.def-engine-actions {
+  .d-btn {
+    height: 24pt;
+    width: 96pt;
+    font-size: 12px;
+    border-radius: 4pt;
+  }
+
+  .d-icon {
+    font-size: 16px;
+    width: 32px;
+  }
+}
+
+/* Theme selector properties */
+#themeRow {
+  .d-radio {
+    span {
+      display: flex;
+    }
+  }
+}
+
+.theme-thumbnail {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  background-size: cover;
+
+  &#thumb1 {
+    background-image: linear-gradient(-45deg, #6b85d9, #8978d1);
+  }
+
+  &#thumb2 {
+    background-image: linear-gradient(-45deg, #b84e5a, #572a35);
+  }
+
+  &#thumb3 {
+    background-image: linear-gradient(-45deg, #c36872, #d68d81);
+  }
+
+  &#thumb4 {
+    background-image: linear-gradient(-45deg, #69676b, #848666);
+  }
+
+  &#thumb5 {
+    background-image: linear-gradient(-45deg, #c8dc54, #6cdd53);
+  }
+}

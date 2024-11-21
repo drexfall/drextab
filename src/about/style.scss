@@ -1,0 +1,70 @@
+
+.content-wrapper {
+  margin: 0;
+}
+
+.about-text-container {
+  width: 70%;
+
+  p {
+    text-align: justify;
+    margin: 12pt 0;
+  }
+
+  h2 {
+    border-radius: 8pt;
+    margin: 0;
+  }
+}
+
+.card-2 img {
+  border-radius: 8pt;
+  width: 30%;
+  height: fit-content;
+  background: var(--prim-20);
+}
+
+.faq-container {
+  flex-direction: column;
+
+  h2 {
+    text-align: center;
+  }
+
+  .header {
+    display: flex;
+  }
+
+  .content {
+    display: block;
+    overflow: hidden;
+    height: 0;
+
+    p {
+      text-align: justify;
+      margin: 0 24pt 24pt;
+    }
+  }
+}
+
+.faq-elem {
+  overflow: hidden;
+  display: block;
+
+  .header {
+    position: relative;
+  }
+
+  h3 {
+    margin: 0;
+  }
+}
+
+.d-check {
+  margin: 24pt;
+  cursor: pointer;
+
+  input ~ span {
+    color: var(--prim-100);
+  }
+}

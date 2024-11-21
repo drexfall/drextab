@@ -1,3 +1,9 @@
+import "../styles/style.scss"
+import "./style.scss"
+import {initialSet} from "../scripts/main";
+window.addEventListener("load", () => {
+    initialSet(false)
+})
 function validateForm() {
     let form  = document.getElementById("feedbackForm")
     if(!form["mobile_number"].value.match(/^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$/)){

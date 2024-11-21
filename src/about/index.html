@@ -1,29 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-<link rel="manifest" href="../site.webmanifest">
-  <title>About Us | Drextab Search</title>
-  <link rel="stylesheet" href="../style.css" />
-  <link rel="stylesheet" href="../components.css" />
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <script src="main.js"></script>
-  <script src="../settings.js"></script>
-</head>
+  <link rel="apple-touch-icon" sizes="180x180" href="../../static/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../static/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../static/favicon-16x16.png">
+<link rel="manifest" href="../../site.webmanifest">
+  <title>About Us // drextab</title>
 
-<body onload="initialSet(false);bodyLoad()">
+</head>
+<body>
   <div id="brightnessOverlay"></div>
   <main class="content-wrapper">
     <div id="pageTitle" class="center-flex">
-      <img src="../assets/logo.png" alt="Drextab Logo" />
+      <img src="../../static/logo.png" alt="Drextab Logo" />
       <h1>About Us</h1>
     </div>
     <section class="card-2">
-      <img src="../assets/about_thumbs/what.jpg" alt="Figurine standing in front of a question mark" />
+      <img src="../../static/about_thumbs/what.jpg"
+           alt="Figurine standing in front of a question mark" loading="lazy" />
       <div class="about-text-container">
         <h2>What is Drextab?</h2>
         <p>
@@ -47,10 +42,10 @@
           sensitive browser fingerprinting.
         </p>
       </div>
-      <img src="../assets/about_thumbs/why.jpg" alt="Pointer over text reading security" />
+      <img src="../../static/about_thumbs/why.jpg" alt="Pointer over text reading security" loading="lazy"/>
     </section>
     <section class="card-2">
-      <img src="../assets/about_thumbs/mission.jpg" alt="Paintbrush dipped in blue paint" />
+      <img src="../../static/about_thumbs/mission.jpg" alt="Paintbrush dipped in blue paint" loading="lazy" />
       <div class="about-text-container">
         <h2>Our Mission</h2>
         <p>
@@ -70,7 +65,7 @@
           shape represents our vision of being used all aroud the globe.
         </p>
       </div>
-      <img src="../assets/about_thumbs/logo.png" alt="Drextab Logo" />
+      <img src="../../static/about_thumbs/about-logo.png" alt="Drextab Logo" loading="lazy"/>
     </section>
     <section class="card-2 faq-container">
       <h2>Frequenty Asked Questions</h2>
@@ -78,7 +73,7 @@
       <section class="card-3 faq-elem">
         <div class="header">
           <div class="d-check">
-            <input type="checkbox" name="faq-select" id="faqCheck1" onchange="toggleFAQ()" />
+            <input type="checkbox" name="faq-select" id="faqCheck1"  />
             <span class="material-icons">expand_more</span>
           </div>
           <label for="faqCheck1">Is my data collected?</label>
@@ -94,7 +89,7 @@
       <section class="card-3 faq-elem">
         <div class="header">
           <div class="d-check">
-            <input type="checkbox" name="faq-select" id="faqCheck3" onchange="toggleFAQ()" />
+            <input type="checkbox" name="faq-select" id="faqCheck3" />
             <span class="material-icons">expand_more</span>
           </div>
           <label for="faqCheck3">How do you keep settings without collecting data?</label>
@@ -106,21 +101,21 @@
               href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">localStorage</a> protocol to
             store and use your settings throughout
             all the Drextab pages. We don't even use that until you
-            specifically press the <i><b>Save</b></i> button on the <a href="../settings/">Settings page</a> menu.</a>
+            specifically press the <i><b>Save</b></i> button on the <a href="../settings">Settings page</a> menu.</a>
           </p>
         </div>
       </section>
       <section class="card-3 faq-elem">
         <div class="header">
           <div class="d-check">
-            <input type="checkbox" name="faq-select" id="faqCheck2" onchange="toggleFAQ()" />
+            <input type="checkbox" name="faq-select" id="faqCheck2" />
             <span class="material-icons">expand_more</span>
           </div>
           <label for="faqCheck2">How to change theme?</label>
         </div>
         <div class="content">
           <p>
-            Go to the <a href="../feedback/">Feedback page</a> and fill out
+            Go to the <a href="../feedback">Feedback page</a> and fill out
             your details. In the <b>Tags</b> field, select <b>Bug</b>
             <i>(add more tags to filter your problem better)</i> and then give
             the severity of your bug in the <b>Rating panel</b>. That's it!
@@ -130,14 +125,14 @@
       <section class="card-3 faq-elem">
         <div class="header">
           <div class="d-check">
-            <input type="checkbox" name="faq-select" id="faqCheck4" onchange="toggleFAQ()" />
+            <input type="checkbox" name="faq-select" id="faqCheck4"/>
             <span class="material-icons">expand_more</span>
           </div>
           <label for="faqCheck4">How to report a bug?</label>
         </div>
         <div class="content">
           <p>
-            Go to the <a href="../feedback/">Feedback page</a> and fill out
+            Go to the <a href="../feedback">Feedback page</a> and fill out
             your details. In the <b>Tags</b> field, select <b>Bug</b>
             <i>(add more tags to filter your problem better)</i> and then give
             the severity of your bug in the <b>Rating panel</b>. That's it!
@@ -147,14 +142,14 @@
     </section>
 
     <div class="footer center-flex">
-      <span>&copy; Drextab 2024</span>
+      <span>&copy; drexfall 2024</span>
       <span class="separator">|</span>
       <ul class="main-navigator">
-        <li><a href="../">Home</a></li>
+        <li><a href="../..">Home</a></li>
         <li><a href="../privacy/">Privacy</a></li>
-        <li><a href="../settings/">Settings</a></li>
+        <li><a href="../settings">Settings</a></li>
         <li><a href="" class="active">About</a></li>
-        <li><a href="../feedback/">Feedback</a></li>
+        <li><a href="../feedback">Feedback</a></li>
       </ul>
     </div>
   </main>

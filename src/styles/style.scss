@@ -1,5 +1,6 @@
+@use "components" as *;
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nova+Mono&family=Open+Sans:wght@300;400;500;600;700;800&family=Patrick+Hand:wght@400&family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Prata:wght@400&family=Quicksand:wght@200;300;400;500;600;700&family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@200;300;400;500;600;700&family=Roboto+Mono:wght@200;300;400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&display=swap');
-
 :root{
   --prim-20: #ffffff33;
   --prim-40: #ffffff66;

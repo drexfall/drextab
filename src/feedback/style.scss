@@ -1,4 +1,5 @@
 
+
 table {
   width: 100%;
 }
@@ -7,23 +8,29 @@ label {
   font-size: 14pt;
   opacity: 0.8;
   cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
 }
-label:hover{
-  opacity: 1;
-}
-.d-radio{
+
+.d-radio {
   padding: 14pt;
 }
+
 .label-wrapper {
   vertical-align: middle;
+
+  &.message {
+    vertical-align: top;
+  }
 }
-.label-wrapper.message{
-  vertical-align: top;
-}
+
 #contactMessage {
   height: 100%;
   width: 100%;
 }
-.d-btn{
-  margin-top: 36pt
+
+.d-btn {
+  margin-top: 36pt;
 }

@@ -1,0 +1,405 @@
+#brightnessOverlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  opacity: 0;
+}
+
+.d-btn {
+  height: 48pt;
+  width: 128pt;
+  border-radius: 8pt;
+  font-size: 12pt;
+  letter-spacing: 1pt;
+  padding: 0;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.d-icon {
+  background-color: transparent;
+  border: 0;
+  height: 24pt;
+  width: 24pt;
+  padding: 0;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* Primary button style */
+.btn-primary {
+  background: var(--prim-80);
+  color: var(--scnd-100);
+  border: none;
+
+  &:not(:disabled):hover {
+    color: var(--prim-100);
+    background: var(--scnd-100);
+  }
+}
+
+/* Secondary button style */
+.btn-secondary {
+  background: var(--prim-20);
+  border: 2pt solid transparent;
+
+  &:not(:disabled):hover {
+    background: var(--prim-100);
+    border-color: var(--prim-100);
+    color: var(--scnd-100);
+  }
+}
+
+/* Tertiary button style */
+.btn-tertiary {
+  background: transparent;
+  border: 2pt solid var(--prim-100);
+
+  &:not(:disabled):hover {
+    color: var(--scnd-100);
+    background: var(--prim-60);
+    border-color: var(--prim-100);
+  }
+}
+
+.d-tag {
+  position: relative;
+  height: 8pt;
+  width: 48pt;
+  display: inline-block;
+  margin: 0 4pt;
+  cursor: pointer;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+
+  span {
+    height: 100%;
+    width: 100%;
+    display: table;
+    position: absolute;
+    text-align: center;
+    border-radius: 16pt;
+    font-size: 10pt;
+  }
+
+  &:hover span {
+    background-color: var(--prim-40);
+    border-color: var(--prim-100);
+  }
+
+  input:checked ~ span {
+    color: var(--scnd-100);
+    background-color: var(--prim-100);
+  }
+}
+
+.d-check {
+  --size: 16px;
+  height: var(--size);
+  width: var(--size);
+  position: relative;
+
+  input {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  input ~ span {
+    position: absolute;
+    height: 100%;
+    border-radius: 2pt;
+    text-align: center;
+    font-weight: bold;
+    top: 0;
+    left: 0;
+    color: transparent;
+    outline: 2pt solid var(--prim-80);
+    font-size: var(--size);
+  }
+
+  input:hover ~ span {
+    outline-color: var(--prim-100);
+    color: var(--prim-100);
+  }
+
+  input:checked ~ span {
+    background-color: var(--prim-100);
+    outline-color: var(--prim-100);
+    color: var(--scnd-100);
+  }
+}
+
+.d-toggle {
+  height: 16pt;
+  width: 32pt;
+  position: relative;
+
+
+  &:hover {
+    .toggle-body {
+      outline-color: var(--prim-100);
+      div {
+        background: var(--prim-60);
+      }
+    }
+  }
+
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+
+    & + .toggle-body {
+      div {
+        background: var(--prim-20);
+        left: 0%;
+        transform: translate(0%, 0%);
+      }
+    }
+
+    &:checked + .toggle-body {
+      div {
+        background: var(--prim-100);
+        left: 100%;
+        transform: translate(-100%, 0%);
+
+      }
+    }
+
+
+  }
+
+
+  .toggle-body {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--prim-20);
+    border-radius: 12pt;
+    outline: 1pt solid transparent;
+    border: 2pt solid transparent;
+
+
+    div {
+      width: 50%;
+      height: 100%;
+      top: 0;
+      position: absolute;
+      border-radius: 100%;
+    }
+
+
+  }
+}
+
+.d-radio {
+  position: relative;
+  padding: 24pt;
+  cursor: pointer;
+  display: inline-block;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+
+  span {
+    background-color: var(--prim-20);
+    width: 100%;
+    height: 100%;
+    display: table;
+    position: absolute;
+    text-align: center;
+    border-radius: 4pt;
+    border: 1pt solid transparent;
+    top: 0;
+    left: 0;
+  }
+
+  &:hover span {
+    background-color: var(--prim-20);
+    border-color: var(--prim-100);
+  }
+
+  input:checked ~ span {
+    color: var(--scnd-100);
+    background-color: var(--prim-100);
+  }
+}
+
+select {
+  background: var(--prim-40);
+  padding: 8pt;
+  border-radius: 4pt;
+  border: 0;
+  font-size: 12pt;
+  cursor: pointer;
+  outline: 1pt solid transparent;
+
+  &:hover {
+    outline-color: var(--prim-100);
+  }
+}
+
+.footer {
+  margin: 5% 0;
+
+  span {
+    font-size: 12pt;
+    color: var(--prim-100);
+    opacity: 0.7;
+    font-weight: bold;
+  }
+
+  .separator {
+    margin: 0 24pt;
+  }
+}
+
+.main-navigator {
+  display: inline-block;
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  column-gap: 24pt;
+  padding: 0;
+
+  li {
+    list-style: none;
+    cursor: pointer;
+  }
+
+  a {
+    color: var(--prim-100);
+    font-size: 12pt;
+    text-decoration: none;
+    border-bottom: 2pt solid transparent;
+    opacity: 0.7;
+
+    &.active,
+    &:hover {
+      color: var(--prim-100);
+      border-bottom-color: var(--prim-100);
+      opacity: 1;
+    }
+  }
+}
+
+.content-wrapper {
+  min-height: 100%;
+  height: 100%;
+  width: 80%;
+  max-width: 720pt;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  background-color: #dadada22;
+  border-radius: 14pt;
+  width: 100%;
+}
+
+.card-1 {
+  min-height: 80%;
+  padding: 36pt;
+  box-sizing: border-box;
+}
+
+.card-2 {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 24pt;
+  margin-top: 48pt;
+  padding: 24pt;
+  box-sizing: border-box;
+}
+
+.card-3 {
+  margin-top: 12pt;
+  border-radius: 8pt;
+
+  label {
+    padding-top: 2em;
+    box-sizing: border-box;
+    width: 100%;
+    cursor: pointer;
+  }
+}
+
+#pageTitle {
+  color: var(--prim-100);
+  gap: 24pt;
+  margin: 128pt 0;
+
+  img {
+    width: 36pt;
+  }
+
+  h1 {
+    color: var(--prim-100);
+    font-size: 36pt;
+    letter-spacing: 5pt;
+  }
+}
+
+input,
+textarea {
+  background: var(--prim-20);
+  border-radius: 4pt;
+  border: 1pt solid transparent;
+  padding: 12pt;
+  font-size: 12pt;
+  max-height: 100%;
+  resize: vertical;
+  overflow: hidden;
+  outline: 1pt solid transparent;
+
+  &:not(:disabled):hover {
+    border-color: var(--prim-100);
+  }
+
+  &:focus-visible {
+    border-color: var(--prim-100);
+    background-color: transparent;
+  }
+}

@@ -1,10 +1,16 @@
+import * as styles from  "../styles/style.scss"
+import "./style.scss";
+import {initialSet} from "../scripts/main";
+console.log(styles)
 let faqElems;
-function bodyLoad() {
+window.addEventListener("load", () => {
+  initialSet(false)
   faqElems = document.getElementsByClassName("faq-elem");
-  for (let i = 0; i < faqElems.length; i++) {
-    faqElems[i].getElementsByTagName("input")[0].checked = false;
-  }
-}
+  Array.from(faqElems).forEach(faqElem => {
+    faqElem.getElementsByTagName("input")[0].checked = false;
+    faqElem.getElementsByTagName("input")[0].addEventListener("click", toggleFAQ);
+  });
+})
 
 function toggleFAQ() {
   for (let child = 0; child < faqElems.length; child++) {
